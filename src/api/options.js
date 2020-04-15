@@ -32,12 +32,19 @@ export default {
 
     async getTechnologiesOptions() {
         try {
+            let to = []
+            let technologiesO = await db.collection("typeLine").get();
+            technologiesO.forEach(technologie => {
+                to.push(technologie.data());
+            });
+            store.commit('setTechnologiesOptions', to)
+
             let t = []
-            let technologies = await db.collection("typeLine").get();
+            let technologies = await db.collection("technologies").get();
             technologies.forEach(technologie => {
                 t.push(technologie.data());
             });
-            store.commit('setTechnologiesOptions', t)
+            store.commit('setTechnologies', t)
         } catch (error) {
             console.error(error)
         }

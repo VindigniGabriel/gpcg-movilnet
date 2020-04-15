@@ -2,7 +2,7 @@
   <v-container fill-height>
     <v-layout justify-center align-center>
        <v-flex xs10 class="text-center">
-        <span class="app-font">GPCG - SRC</span>
+        <span class="app-font">SRC</span>
         <v-divider></v-divider>
         <span class="app-font">Seguimiento al Requerimiento en Contingencia</span>
       </v-flex>

@@ -54,7 +54,7 @@ const actions = {
                 commit('setClientRegister', true)
                 commit('setSnackbar', {
                     active: true,
-                    text: 'El usuario se encuentra registrado.',
+                    text: 'El cliente se encuentra registrado.',
                     color: 'primary'
                 })
                 console.log('Cliente registrado')
@@ -68,8 +68,8 @@ const actions = {
                 })
                 commit('setSnackbar', {
                     active: true,
-                    text: 'El usuario no se encuentra registrado.',
-                    color: 'warning'
+                    text: 'El cliente no se encuentra registrado.',
+                    color: 'info'
                 })
                 console.log('Cliente no registrado')
             }

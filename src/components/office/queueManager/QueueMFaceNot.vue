@@ -18,7 +18,7 @@
         <v-card-text v-if="active !== null">
           <v-list-item four-line>
             <v-list-item-content>
-              <v-list-item-title>Datos del usuario</v-list-item-title>
+              <v-list-item-title>Datos del cliente</v-list-item-title>
               <v-list-item-subtitle>Nombre: {{active.name}}</v-list-item-subtitle>
               <v-list-item-subtitle>Cédula: {{active.clientId}}</v-list-item-subtitle>
               <v-list-item-subtitle>Contacto 1: {{active.contact1}}</v-list-item-subtitle>
@@ -28,6 +28,7 @@
           <v-list-item four-line>
             <v-list-item-content>
               <v-list-item-title>Datos del requerimiento</v-list-item-title>
+              <v-list-item-subtitle># {{active.ticket}}</v-list-item-subtitle>
               <v-list-item-subtitle>Requerimiento: {{active.request}}</v-list-item-subtitle>
               <v-list-item-subtitle>Línea: {{active.phone}}</v-list-item-subtitle>
               <v-list-item-subtitle>Tecnología: {{active.technologie}}</v-list-item-subtitle>

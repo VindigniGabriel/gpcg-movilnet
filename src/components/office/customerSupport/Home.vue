@@ -7,6 +7,9 @@
         {{viewDate}}
         <v-divider></v-divider>
       </v-flex>
+      <v-flex xs12>
+        <MonitorQueueM/>
+      </v-flex>
       <v-flex xs12 md4>
         <v-card class="mx-auto">
           <v-list shaped>
@@ -137,9 +140,10 @@ import XLSX from "xlsx";
 import moment from "moment";
 import { mapGetters } from "vuex";
 import HorizontalBar from "@/components/chart/HorizontalBar.vue";
+import MonitorQueueM from "./MonitorQueueM";
 import Availability from "@/components/aplications/Availability";
 export default {
-  components: { HorizontalBar, Availability },
+  components: { HorizontalBar, Availability, MonitorQueueM },
   data: () => ({
     dialogObservations: "",
     content: "",
@@ -231,7 +235,7 @@ export default {
       };
     },
     updateTimer() {
-      setInterval(() => (this.date = moment().format("LLLL")), 60000);
+      setInterval(() => (this.date = moment().format("LLLL")), 1000);
     },
     dateRelative(fecha) {
       return moment(fecha).fromNow();
@@ -286,7 +290,7 @@ export default {
           requests.push({
             Número: request.ticket,
             Estatus: request.status,
-            Usuario: request.name,
+            Cliente: request.name,
             Cédula: request.clientId,
             "Contacto 1": request.contact1,
             "Contacto 2": request.contact2,

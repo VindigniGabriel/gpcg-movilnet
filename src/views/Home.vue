@@ -2,9 +2,8 @@
   <v-container fill-height>
     <v-layout justify-center align-center>
       <v-flex xs10 class="text-center">
-        <span class="app-font">GPCG</span>
+        <span class="app-font">SRC</span>
         <v-divider></v-divider>
-        <span class="app-font">Gerencia de Procesos y Calidad de Gestión</span>
       </v-flex>
     </v-layout>
   </v-container>

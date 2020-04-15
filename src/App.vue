@@ -22,7 +22,7 @@
         <template v-if="getMenuFilterSecond.length > 0">
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title>Configuraciones SICO</v-list-item-title>
+              <v-list-item-title>Configuraciones SRC</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item v-for="item in getMenuFilterSecond" :key="item.text" @click="url(item.url)">
@@ -66,7 +66,7 @@
     <v-app-bar app fixed color="primary">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-if="getUser.uid"></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="app-font">GerenciaPCG</v-toolbar-title>
+      <v-toolbar-title class="app-font">SRC</v-toolbar-title>
 
       <v-spacer></v-spacer>
       <v-layout v-if="getUser.uid" justify-end align-center>

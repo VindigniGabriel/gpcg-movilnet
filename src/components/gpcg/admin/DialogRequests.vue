@@ -40,7 +40,7 @@
               <v-switch
                 color="success"
                 v-model="request.phone"
-                :label="`Usuario actual: ${request.phone ? 'Si': 'No'}`"
+                :label="`Cliente actual: ${request.phone ? 'Si': 'No'}`"
               ></v-switch>
             </v-flex>
             <v-flex xs12 sm6 md3>

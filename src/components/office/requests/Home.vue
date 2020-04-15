@@ -6,7 +6,7 @@
           <v-layout wrap>
             <v-flex xs12>
               <v-subheader>
-                Usuario
+                Cliente
                 <v-icon medium color="primary">add</v-icon>requerimientos
               </v-subheader>
               <v-divider></v-divider>

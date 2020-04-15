@@ -123,7 +123,7 @@ export default {
         },
         { text: "Estatus", value: "status" },
         { text: "Cédula", value: "clientId" },
-        { text: "Usuario", value: "name" },
+        { text: "Cliente", value: "name" },
         { text: "Requerimiento", value: "request" },
         { text: "Línea", value: "phone", sortable: false },
         { text: "Tec.", value: "technologie", sortable: false },

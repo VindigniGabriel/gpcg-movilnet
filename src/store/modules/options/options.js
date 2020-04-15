@@ -6,10 +6,14 @@ const state = {
     requestsOptions: [],
     servicesOptions: [],
     aplicationsStatus: null,
-    statusOptions: []
+    statusOptions: [],
+    technologies: null
 }
 
 const mutations = {
+    setTechnologies(state, payload) {
+        state.technologies = payload
+    },
     setTechnologiesOptions(state, payload) {
         state.technologiesOptions = payload
     },
@@ -31,6 +35,10 @@ const mutations = {
 }
 
 const actions = {
+    async getTechnologies() {
+        options.getTechnologies()
+    },
+
     async getTechnologiesOptions() {
         options.getTechnologiesOptions()
     },
@@ -62,7 +70,8 @@ const getters = {
     getRequestsOptions: state => state.requestsOptions,
     getServicesOptions: state => state.servicesOptions,
     getAplicationsStatus: state => state.aplicationsStatus,
-    getStatusOptions: state => state.statusOptions
+    getStatusOptions: state => state.statusOptions,
+    getTechnologies: state => state.technologies
 }
 
 export default {

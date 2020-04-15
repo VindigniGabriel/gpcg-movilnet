@@ -1,7 +1,7 @@
 <template>
   <v-form ref="form" v-model="valid" lazy-validation>
     <v-subheader>
-      Información del usuario
+      Información del cliente
       <v-spacer></v-spacer>
       <v-btn text icon @click="editUserData" v-if="edit">
         <v-icon>edit</v-icon>
@@ -109,13 +109,13 @@ export default {
         this.$store.commit("setClientRegister", true);
         this.$store.commit("setSnackbar", {
           active: true,
-          text: `Usuario actualizado con éxito.`,
+          text: `Cliente actualizado con éxito.`,
           color: "success"
         });
       } else {
         this.$store.commit("setSnackbar", {
           active: true,
-          text: `Error!. Usuario no logró ser actualizado.`,
+          text: `Error!. Cliente no logró ser actualizado.`,
           color: "error"
         });
       }

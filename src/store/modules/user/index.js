@@ -17,7 +17,7 @@ const state = {
     queueManager: [],
     user: new User(),
     menuItemsFirst: [
-        { icon: 'person_add', text: 'Registro de usuarios', url: 'register', locationType: 'office' },
+        { icon: 'person_add', text: 'Registro de clientes', url: 'register', locationType: 'office' },
         { icon: 'transfer_within_a_station', text: 'Gestión de cola', url: 'queueM', locationType: 'office' },
         { icon: 'contacts', text: 'Atención diaria', url: 'customerSupport', locationType: 'office' },
         { icon: 'list', text: 'Historial de la OC', url: 'history', locationType: 'office' },
@@ -82,7 +82,7 @@ const actions = {
             context.dispatch('getRequestsOptions')
             context.dispatch('getServicesOptions')
             context.dispatch('getStatusOptions')
-            office.apiGetUsersOffice(location.id)
+            //office.apiGetUsersOffice(location.id)
             context.commit('setUser', Object.assign({ uid: doc.id, name: payload.displayName, locationName: location.data().name, locationCode: location.data().code, route: location.data().locationType }, user))
         }
 

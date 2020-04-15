@@ -163,7 +163,7 @@ export default {
 
             store.commit("setSnackbar", {
                 active: true,
-                text: `Asignación de citas completado. Recuerde confirmar fecha de cita con los usuarios.`,
+                text: `Asignación de citas completado. Recuerde confirmar fecha de cita con el cliente.`,
                 color: "success"
             });
 

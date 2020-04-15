@@ -47,8 +47,8 @@ export default {
     dd: "",
     msjAlert: "",
     alert: false,
-    email: "",
-    password: ""
+    email: "gabriel205414@gmail.com",
+    password: "secret1234"
   }),
   computed: {
     ...mapState(["user"])

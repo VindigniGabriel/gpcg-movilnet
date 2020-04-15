@@ -5,9 +5,6 @@
         <v-subheader>Estadísticas</v-subheader>
         <v-divider></v-divider>
       </v-flex>
-      <v-flex xs12>
-        <MonitorQueueM/>
-      </v-flex>
       <v-flex xs12 sm6>
         <ChartFace />
       </v-flex>
@@ -42,7 +39,6 @@ import ChartFace from "./ChartFace";
 import ChartFaceNot from "./ChartFaceNot";
 import ChartStatusFace from "./ChartStatusFace";
 import ChartStatusFaceNot from "./ChartStatusFaceNot";
-import MonitorQueueM from "./MonitorQueueM";
 import { mapGetters } from 'vuex';
 export default {
   data: () => ({}),
@@ -51,8 +47,7 @@ export default {
     ChartFace,
     ChartFaceNot,
     ChartStatusFace,
-    ChartStatusFaceNot,
-    MonitorQueueM
+    ChartStatusFaceNot
   },
   computed: {
     ...mapGetters(['getRequestsLocation'])
@@ -85,7 +80,7 @@ export default {
         });
         requests.push({
           Numero: request.ticket,
-          Usuario: request.name,
+          Cliente: request.name,
           Cédula: request.clientId,
           "Contacto 1": request.contact1,
           "Contacto 2": request.contact2,
